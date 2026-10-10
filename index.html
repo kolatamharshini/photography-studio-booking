@@ -1,0 +1,194 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LensCraft | Photography Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <a class="logo" href="#home">LensCraft<span>PHOTOGRAPHY STUDIO</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#packages">Packages</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="btn header-btn" onclick="bookWhatsApp()">☏ Book on WhatsApp</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="eyebrow">CAPTURING LIFE'S MOST BEAUTIFUL MOMENTS</p>
+    <h1>Your Story,<br><em>Our Lens.</em></h1>
+    <p>From grand celebrations to intimate moments, we capture it all with passion and creativity.</p>
+    <button class="btn" onclick="bookWhatsApp()">☏ Book Your Shoot ↗</button>
+    <a class="phone" href="https://wa.me/919398224829" target="_blank" rel="noopener">WhatsApp: 9398224829</a>
+  </div>
+  <blockquote>“Not just photographs,<br>but emotions frozen<br>in time.”</blockquote>
+</section>
+
+<section class="why section">
+  <p class="eyebrow">WHY CHOOSE US</p>
+  <h2>Every moment deserves to be remembered.</h2>
+  <div class="features">
+    <div><span>◎</span><h3>Professional</h3><p>Quality equipment</p></div>
+    <div><span>✧</span><h3>Creative</h3><p>Unique perspectives</p></div>
+    <div><span>♡</span><h3>Natural</h3><p>Real emotions</p></div>
+    <div><span>✓</span><h3>Beautiful edits</h3><p>Carefully finished</p></div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <p class="eyebrow center">WHAT WE PHOTOGRAPH</p>
+  <h2 class="center">Our Services</h2>
+  <p class="sub center">Every occasion. Every emotion. Captured perfectly.</p>
+  <div class="service-grid">
+    <article class="service-card">
+      <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=800&q=85" alt="Indian wedding couple">
+      <div><h3>Indian Weddings</h3><p>Traditional, candid and cinematic wedding memories.</p><button class="text-btn" onclick="chooseService('Indian Wedding')">Enquire ↗</button></div>
+    </article>
+    <article class="service-card">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=85" alt="Portrait photography">
+      <div><h3>Portraits</h3><p>Personal, professional and stylish portraits.</p><button class="text-btn" onclick="chooseService('Portrait')">Enquire ↗</button></div>
+    </article>
+    <article class="service-card">
+      <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=85" alt="Newborn photography">
+      <div><h3>Newborn & Baby</h3><p>Little details and precious first memories.</p><button class="text-btn" onclick="chooseService('Newborn and Baby')">Enquire ↗</button></div>
+    </article>
+    <article class="service-card">
+      <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=85" alt="Family photography">
+      <div><h3>Family</h3><p>Beautiful memories with your favourite people.</p><button class="text-btn" onclick="chooseService('Family Photography')">Enquire ↗</button></div>
+    </article>
+    <article class="service-card">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=85" alt="Pre wedding couple photography">
+      <div><h3>Pre-Wedding</h3><p>Your love story in stunning locations.</p><button class="text-btn" onclick="chooseService('Pre-Wedding')">Enquire ↗</button></div>
+    </article>
+    <article class="service-card">
+      <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=85" alt="Birthday celebration">
+      <div><h3>Birthdays & Events</h3><p>Celebrate milestones, parties and special days.</p><button class="text-btn" onclick="chooseService('Birthday or Event')">Enquire ↗</button></div>
+    </article>
+    <article class="service-card">
+      <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=85" alt="Camera and product photography">
+      <div><h3>Product Photography</h3><p>Clear, creative photos for your brand.</p><button class="text-btn" onclick="chooseService('Product Photography')">Enquire ↗</button></div>
+    </article>
+    <article class="service-card">
+      <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=85" alt="Engagement celebration">
+      <div><h3>Engagements</h3><p>Celebrate the beginning of your forever.</p><button class="text-btn" onclick="chooseService('Engagement')">Enquire ↗</button></div>
+    </article>
+  </div>
+</section>
+
+<section class="quote-banner">
+  <div>
+    <p class="eyebrow">MADE FOR YOUR BIG DAY</p>
+    <h2>Indian Weddings</h2>
+    <p>Rich traditions. Joyful rituals. Timeless memories.</p>
+    <button class="btn" onclick="chooseService('Indian Wedding')">Plan Your Wedding Shoot ↗</button>
+  </div>
+  <blockquote>“Two hearts, one journey,<br>a thousand memories.”</blockquote>
+</section>
+
+<section class="section" id="gallery">
+  <p class="eyebrow center">OUR PORTFOLIO</p>
+  <h2 class="center">Moments We've Captured</h2>
+  <p class="sub center">A glimpse of the stories we've had the joy to tell.</p>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=1000&q=85" alt="Indian wedding ceremony">
+    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=85" alt="Indian bride in traditional attire">
+    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=85" alt="Wedding couple">
+    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=85" alt="Wedding celebration">
+    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=85" alt="Birthday party">
+    <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=85" alt="Family memories">
+  </div>
+  <p class="center"><button class="btn btn-dark" onclick="bookWhatsApp('I would like to see more photography samples.')">Ask for More Photos ↗</button></p>
+</section>
+
+<section class="section packages" id="packages">
+  <p class="eyebrow center">SIMPLE, FLEXIBLE OPTIONS</p>
+  <h2 class="center">Photography Packages</h2>
+  <p class="sub center">Choose a starting package. Final pricing can be discussed on WhatsApp.</p>
+  <div class="package-grid">
+    <article class="package">
+      <h3>Essential</h3><p class="price">Custom Quote</p>
+      <p>For small occasions and intimate shoots.</p>
+      <ul><li>Photography session</li><li>Edited photo selection</li><li>Digital delivery</li></ul>
+      <button class="btn outline" onclick="choosePackage('Essential')">Enquire on WhatsApp</button>
+    </article>
+    <article class="package popular">
+      <span class="popular-label">POPULAR CHOICE</span>
+      <h3>Signature</h3><p class="price">Custom Quote</p>
+      <p>For celebrations worth remembering.</p>
+      <ul><li>Extended coverage</li><li>More edited photos</li><li>Creative candid shots</li><li>Digital gallery</li></ul>
+      <button class="btn" onclick="choosePackage('Signature')">Enquire on WhatsApp</button>
+    </article>
+    <article class="package">
+      <h3>Premium</h3><p class="price">Custom Quote</p>
+      <p>For weddings and larger events.</p>
+      <ul><li>Event-day coverage</li><li>Photo and video options</li><li>Premium editing</li><li>Album options</li></ul>
+      <button class="btn outline" onclick="choosePackage('Premium')">Enquire on WhatsApp</button>
+    </article>
+  </div>
+  <p class="sub center">Prices depend on event type, location, hours and requested services.</p>
+</section>
+
+<section class="about section" id="about">
+  <div>
+    <p class="eyebrow">A LITTLE ABOUT US</p>
+    <h2>More than photos.<br>We're storytellers.</h2>
+    <p>At LensCraft, we believe every occasion has a story worth keeping. From the rituals of an Indian wedding to a child's birthday smile, we focus on the moments that matter to you.</p>
+    <p>Our goal is simple: thoughtful photography, creative ideas and memories you will love revisiting.</p>
+    <button class="btn" onclick="bookWhatsApp('Hello! I would like to know more about LensCraft Photography Studio.')">Let's Talk ↗</button>
+  </div>
+  <img src="https://images.unsplash.com/photo-撮影?auto=format&fit=crop&w=900&q=85" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=900&q=85'" alt="Photographer working with a camera">
+</section>
+
+<section class="contact section" id="contact">
+  <p class="eyebrow">LET'S MAKE MEMORIES</p>
+  <h2>Your occasion. Our camera.<br>A story to keep forever.</h2>
+  <p>Tell us what you're celebrating and we'll discuss the details with you on WhatsApp.</p>
+  <form id="bookingForm">
+    <label for="customerName">Your name</label>
+    <input id="customerName" name="customerName" placeholder="Enter your name" required>
+    <label for="customerPhone">Your phone number</label>
+    <input id="customerPhone" name="customerPhone" type="tel" placeholder="Enter your phone number" required>
+    <label for="occasion">Occasion</label>
+    <select id="occasion" name="occasion" required>
+      <option value="">Choose your occasion</option>
+      <option>Indian Wedding</option><option>Engagement</option>
+      <option>Pre-Wedding</option><option>Birthday or Event</option>
+      <option>Portrait</option><option>Newborn and Baby</option>
+      <option>Family Photography</option><option>Product Photography</option>
+      <option>Other</option>
+    </select>
+    <label for="eventDate">Event date</label>
+    <input id="eventDate" name="eventDate" type="date">
+    <label for="details">Any other details? (optional)</label>
+    <textarea id="details" name="details" placeholder="Location, timings, or what you have in mind"></textarea>
+    <button class="btn" type="submit">Send Booking Request on WhatsApp ↗</button>
+  </form>
+  <p class="sub">Prefer to message directly? <a href="https://wa.me/919398224829" target="_blank" rel="noopener">WhatsApp 9398224829</a></p>
+</section>
+</main>
+
+<footer>
+  <a class="logo" href="#home">LensCraft<span>PHOTOGRAPHY STUDIO</span></a>
+  <p>Every occasion. Every emotion. Every story.</p>
+  <a href="https://wa.me/919398224829" target="_blank" rel="noopener">WhatsApp: 9398224829</a>
+  <small>© <span id="year"></span> LensCraft Photography Studio. All rights reserved.</small>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/919398224829" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">☏</a>
+<script src="script.js"></script>
+</body>
+</html>
+```
